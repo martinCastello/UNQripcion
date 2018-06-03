@@ -5,7 +5,7 @@ jdk:
 services:
   - mysql
 before_script:
-  - mvn install:install-file "-Dfile=gs-accessing-data-mysql-0.1.0.jar" "-DgroupId=org.springframework" "-DartifactId=gs-mysql-data" "-Dversion=0.1.0" "-Dpackaging=jar"
+  - mvn install:install-file "-Dfile=build\libs\gs-accessing-data-mysql-0.1.0.jar" "-DgroupId=org.springframework" "-DartifactId=gs-mysql-data" "-Dversion=0.1.0" "-Dpackaging=jar"
   - chmod +x src/test/run.sh
 script:
   - src/test/run.sh
