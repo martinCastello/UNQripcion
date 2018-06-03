@@ -4,5 +4,7 @@ jdk:
 - oraclejdk8
 services:
   - mysql
+before_install:
+  - chmod +x src/test/run.sh
 script:
 - src/test/run.sh
