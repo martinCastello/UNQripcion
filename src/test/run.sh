@@ -20,6 +20,10 @@ cd $(dirname $0)
 
 #cd ../initial
 
+mvn install
+
+mvn clean dependency:copy-dependencies package
+
 mvn clean compile
 ret=$?
 if [ $ret -ne 0 ]; then
