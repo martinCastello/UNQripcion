@@ -10,5 +10,5 @@ before_script:
   - chmod +x src/test/run.sh
 script:
   - mvn clean verify
-  cd src/test
+  - cd src/test
   - ./run.sh
