@@ -11,4 +11,4 @@ before_script:
 script:
   - mvn clean verify
   - cd src/test
-  - sh run.sh
+  - run.sh
